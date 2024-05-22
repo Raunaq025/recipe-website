@@ -14,7 +14,7 @@ function ContactPage() {
         e.preventDefault();
 
         try {
-            const res = await axios.post("/ContactUs",{
+            const res = await axios.post("https://recipe-website-wm4c.vercel.app/ContactUs",{
                 Full_Name, Email, Subject, Description
             });
 
