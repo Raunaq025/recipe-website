@@ -9,7 +9,7 @@ app.use(cors());
 
 app.use(cors(
     {
-        origin: [],
+        origin: ["https://recipe-website-bay-delta.vercel.app/"],
         methods: ["POST"],
         credentials: true
     }
