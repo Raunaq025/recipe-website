@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-app.post('/ContactUs', async (req, res) => {
+app.post('/', async (req, res) => {
     const { Full_Name, Email, Subject, Description } = req.body;
 
     const data = {
