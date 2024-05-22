@@ -4,12 +4,14 @@ import axios from 'axios';
 import './contactPage.css';
 
 function ContactPage() {
-
+    
     const [Full_Name,setName]=useState('')
     const [Email,setEmail]=useState('')
     const [Subject,setSubject]=useState('')
     const [Description,setDiscription]=useState('')
 
+    axios.defaults.withCredentials = true;
+    
     async function submit(e){
         e.preventDefault();
 
