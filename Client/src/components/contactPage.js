@@ -14,7 +14,7 @@ function ContactPage() {
         e.preventDefault();
 
         try {
-            const res = await axios.post("https://recipe-website-bay-delta.vercel.app",{
+            const res = await axios.post("/ContactUs",{
                 Full_Name, Email, Subject, Description
             });
 
