@@ -1,0 +1,113 @@
+.recipeDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipeDetail img{
+    margin-top: 90px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid transparent ;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    float: left;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.recipeTitle{
+    font-family: var(--font-4);
+    letter-spacing: 2px;
+    color: var(--first-color);
+
+    margin: 30px 0 10px 10px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+#instructionTag{
+    /* margin-top: 5px;
+    margin-left: 40px;
+    width: calc(100% - 100px);
+    font-family: var(--font-4);
+    font-size: 35px;
+    text-decoration: underline;
+    color: rgb(185, 122, 6) */
+
+    align-self:self-start;
+    margin-left: 5%;
+    font-family: var(--font-4);
+    font-size: 30px;
+    text-decoration: underline;
+    color: rgb(185, 122, 6);
+}
+
+#instruction{
+    margin: 10px 40px 40px 40px;
+    overflow: auto;
+    padding: 5px;
+    border: 1px solid transparent ;
+    border-radius: 20px;
+    box-shadow: rgba(154,181,86, 0.3) 0px 0px 0px 3px;
+    float: left;    
+    overflow: hidden;
+    font-family: var(--font-4);
+    font-size: 18px;
+}
+
+#ingredient-title{
+    align-self:self-start;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-family: var(--font-4);
+    font-size: 30px;
+    text-decoration: underline;
+    color: rgb(185, 122, 6);
+}
+
+#ingredients{
+    align-self:self-start;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+#ingredients li{
+    font-family: var(--font-4);
+    margin: 10px;
+}
+
+#youtube-tag{
+    margin-left: 5%;
+    align-self: start;
+    font-size: 35px;
+    font-family: var(--font-4);
+    text-decoration: underline;
+    color: rgb(185, 122, 6)
+}
+
+#youtube-link{ 
+    margin-left: 70px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    font-family: "Questrial", sans-serif;;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#youtube-link:hover{
+    color: green;
+}
+
+#youtube-link:active{
+    color: red;
+}
+
+@media (max-width: 768px){
+    .recipeDetail img{
+        height: 200px;
+        width: 200px;
+    }
+}

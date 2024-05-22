@@ -1,0 +1,134 @@
+/* Footer */
+footer {
+    background-color: #0e1f32;
+    padding: 2rem;
+    width: 100%;
+  }
+  footer h6 {
+    font-family: var(--font-3);
+    margin-top: 40px;
+    text-align: center;
+    color: gray;
+  }
+  /* Footer Top */
+  footer .footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
+  }
+  
+  footer .footer-top .logo-container {
+    filter: invert();
+    display: flex;
+    gap: 4rem;
+    width: 130px;
+    height: 50px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    footer .footer-top .logo-container {
+      width: 100%;
+      scroll-snap-align: center;
+      overflow: auto;
+    }
+
+    .footer-newsletter{
+      text-align: center;
+    }
+
+    .footer-newsletter span{
+      margin-bottom: 10px;
+      }
+    
+  }
+  
+  .footer-newsletter {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 60px;
+    color: white;
+  }
+  
+  footer .footer-newsletter h2 {
+    font-family: var(--font-3);
+    font-size: 1.5rem;
+  }
+
+  footer .footer-newsletter span{
+    font-family: var(--font-4);
+  }
+  
+  footer .footer-newsletter button {
+    font-family: var(--font-4);
+    background-color: var(--sec-color);
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4rem;
+    width: 160px;
+    height: 50px;
+  }
+  
+  footer .footer-newsletter button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Footer Links */
+  footer .footer-links {
+    margin-top: 60px;
+    border-top: 1px solid #333;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: row;
+    overflow: auto;
+    gap: 1rem;
+    padding-top: 1rem;
+    place-items: center;
+    align-items: baseline;
+  }
+  
+  .footer-links h3 {
+    font-family: var(--font-3);
+    color: #686565;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+  }
+  
+  footer .footer-links ul {
+    cursor: pointer;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+.footer-links ul li {
+    font-family: var(--font-4);
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+  
+  footer .footer-bottom {
+    font-family: var(--font-4);
+    text-align: center;
+    color: #666;
+    font-size: 0.875rem;
+    padding-top: 1rem;
+  }
+  
+
+
+  @media (max-width: 200px){
+    footer{
+        width: 100vh;
+    }
+    }

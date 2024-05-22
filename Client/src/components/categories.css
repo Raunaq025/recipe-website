@@ -1,0 +1,40 @@
+#popular-tag{
+    margin-top: 10rem;
+    margin-left: 2rem;
+    margin-bottom: -5rem;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: var(--font-1);
+}
+
+
+.category-list{
+    display: flex;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.category-item img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.category-item p{
+    font-weight: bold;
+    font-family: var(--font-1);
+}
+
+.category-item:hover{
+    transform: translateY(-10px);
+  color: #1cc20a !important;
+  transition: all 0.4s ease 0s;
+}
+
+@media (max-width: 768px) {
+    .popularCategories{
+        display: none;
+    }
+}
