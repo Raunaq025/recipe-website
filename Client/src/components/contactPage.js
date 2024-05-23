@@ -4,17 +4,19 @@ import axios from 'axios';
 import './contactPage.css';
 
 function ContactPage() {
-
+    
     const [Full_Name,setName]=useState('')
     const [Email,setEmail]=useState('')
     const [Subject,setSubject]=useState('')
     const [Description,setDiscription]=useState('')
 
+    axios.defaults.withCredentials = true;
+    
     async function submit(e){
         e.preventDefault();
 
         try {
-            const res = await axios.post("http://localhost:8000/ContactUs",{
+            const res = await axios.post(`${window.location.origin}/ContactUs`,{
                 Full_Name, Email, Subject, Description
             });
 
