@@ -66,10 +66,12 @@
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 5x;
+    place-content: center;
   }
 
   .meal{
-    width: 6rem;
+    margin-left: 10px;
+    width: 8rem;
     height: 10rem;
     border-radius: 10px 10px 0 0;
     overflow: hidden;
@@ -90,6 +92,10 @@
   }
 
   .b-1 {
+    margin: auto;
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     flex-flow: row;

@@ -38,6 +38,11 @@ footer {
       scroll-snap-align: center;
       overflow: auto;
     }
+    .logo-container img{
+      width: 20%;
+      height:70%;
+      margin: 0 -30px -4rem -30px;
+    }
 
     .footer-newsletter{
       text-align: center;
