@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cors(
     {
-        origin: [""],
+        origin: ["https://recipe-website-client-delta.vercel.app"],
         methods: ["POST"],
         credentials: true
     }
