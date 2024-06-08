@@ -16,7 +16,7 @@ function ContactPage() {
         e.preventDefault();
 
         try {
-            const res = await axios.post('http://localhost:8000/ContactUs',{
+            const res = await axios.post('https://recipe-website-server-khaki.vercel.app/ContactUs',{
                 Full_Name, Email, Subject, Description
             });
 
