@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 import BetterHomes from '../assest/betterHomes (2).png';
 import BuzzFeed from '../assest/buzzFeed (3).png';
 import GoodFood from '../assest/goodFood.png';
@@ -30,7 +31,7 @@ function Footer() {
               <div>
                 <h3 className="recipes">RECIPES</h3>
                 <ul>
-                  <li>All Recipes</li>
+                  <Link to={"/"}><li>All Recipes</li></Link>
                   <li>By Category</li>
                   <li>Collections</li>
                 </ul>
@@ -41,14 +42,14 @@ function Footer() {
                 <ul>
                   <li>About Nagi</li>
                   <li>About Dozer</li>
-                  <li>RecipeTin Meals</li>
+                  <li>CookUP Meals</li>
                 </ul>
               </div>
 
               <div className='related'>
                 <h3>RELATED</h3>
                 <ul>
-                  <li>RecipeTin Japan</li>
+                  <li>CookUP Japan</li>
                   <li>Food Bloggers Central</li>
                 </ul>
               </div>
@@ -56,14 +57,14 @@ function Footer() {
               <div className='help'>
                 <h3>HELP</h3>
                 <ul>
-                  <li>Contact</li>
+                  <Link to={"/ContactUs"}><li>Contact</li></Link>
                   <li>Image Use Policy</li>
                 </ul>
               </div>
             </div>
 
             <div className="footer-bottom">
-              © RecipeTin Eats 2024 | Privacy Policy & Terms | Site Credits | All Rights Reserved
+              © CookUP 2024 | Privacy Policy & Terms | Site Credits | All Rights Reserved
             </div>
         </footer>
     </div>

@@ -8,21 +8,25 @@ function ContactPage() {
     const [Full_Name,setName]=useState('')
     const [Email,setEmail]=useState('')
     const [Subject,setSubject]=useState('')
-    const [Description,setDiscription]=useState('')
+    const [Description,setDescription]=useState('')
 
-    axios.defaults.withCredentials = true;
+    // axios.defaults.withCredentials = true;
     
     async function submit(e){
         e.preventDefault();
 
         try {
-            const res = await axios.post(`${window.location.origin}/ContactUs`,{
+            const res = await axios.post('http://localhost:8000/ContactUs',{
                 Full_Name, Email, Subject, Description
             });
 
             if (res.data.message === "success") {
                 console.log("Success");
                 alert("Feedback sent..Thank you!");
+                setName('');
+                setEmail('');
+                setSubject('');
+                setDescription('');
             }
         } 
         
@@ -62,7 +66,7 @@ function ContactPage() {
                 <div className="contact-form-full">
                 <div className="contact-form-group">
                     <label for="message" className="contact-label">Message*</label>
-                    <textarea onChange={(e) => {setDiscription(e.target.value)}} id="message" name="message" className="contact-textarea" required></textarea>
+                    <textarea onChange={(e) => {setDescription(e.target.value)}} id="message" name="message" className="contact-textarea" required></textarea>
                 </div>
                 </div>
                 <div className="contact-form-full">
