@@ -5,15 +5,15 @@ const cors = require("cors")
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+// app.use(cors());
 
-// app.use(cors(
-//     {
-//         origin: ["http://localhost:8000"],
-//         methods: ["POST"],
-//         credentials: true
-//     }
-// ));
+app.use(cors(
+    {
+        origin: [""],
+        methods: ["POST"],
+        credentials: true
+    }
+));
 
 app.post('/ContactUs', async (req, res) => {
     const { Full_Name, Email, Subject, Description } = req.body;
