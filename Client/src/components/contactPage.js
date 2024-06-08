@@ -10,7 +10,7 @@ function ContactPage() {
     const [Subject,setSubject]=useState('')
     const [Description,setDescription]=useState('')
 
-    // axios.defaults.withCredentials = true;
+    axios.defaults.withCredentials = true;
     
     async function submit(e){
         e.preventDefault();
