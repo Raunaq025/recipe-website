@@ -74,7 +74,7 @@ function ContactPage() {
                 </div>
 
                 <div className='contact-info'>
-            <p>Address : <span>70D, Mohaddipur, Gorakhpur, 273008</span></p>
+            <p>Address : <span>Gorakhpur, Uttar Pradesh</span></p>
             <p>Email : <span>raunaqg025@gmail.com</span></p>
             <p>Phone : <span>+91 956587XXXX</span></p>
             </div>
